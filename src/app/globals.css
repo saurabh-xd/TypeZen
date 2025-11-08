@@ -6,6 +6,32 @@
   --primary: oklch(85.5% 0.138 181.071);
 }
 
+
+  @keyframes marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+       
+@theme {
+  --animate-marquee-rtl: marquee-rtl 30s linear infinite;
+  --animate-marquee-ltr: marquee-ltr 30s linear infinite;
+}
+
+
 /*
 
 @media (prefers-color-scheme: dark) {
