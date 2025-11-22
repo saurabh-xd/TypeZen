@@ -14,7 +14,7 @@ function TestimonialCard({item}: any) {
                      src={item.image}
                      width={45}
                      height={45}
-                     className="rounded-full"
+                     className="rounded-full size-10 object-cover"
                      />
                     </div>
 
