@@ -112,7 +112,7 @@ function Footer() {
             <div className="flex flex-col space-y-2">
               {item.links.map((link, i) => (
                 <Link
-                  className="text-neutral-400 hover:text-neutral-100"
+                  className="text-neutral-400 text-xs md:text-base hover:text-neutral-100"
                   key={i}
                   href={link.href}
                 >
@@ -125,15 +125,15 @@ function Footer() {
       </div>
 
       <div className="flex justify-between">
-        <div className="text-neutral-400 flex justify-center items-center gap-2 ">
+        <div className="text-neutral-400 flex justify-center items-center gap-2 md:text-base text-sm ">
           <WifiPen /> <p>© {new Date().getFullYear()} TypeZen, Inc.</p>
         </div>
 
         {/* social links */}
 
-        <div className="flex gap-6">
+        <div className="flex gap-4 md:gap-6 ">
           {socialLinks.map((links, index) => (
-            <Link key={index} className="text-neutral-400 hover:text-neutral-100" href={links.href}>
+            <Link  key={index} className="text-neutral-400 hover:text-neutral-100" href={links.href} target="_blank">
               {links.icon }
             </Link>
           ))}

@@ -19,7 +19,7 @@ function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="px-4 py-1.5 flex items-center justify-center gap-2 rounded-full border border-teal-500/40 bg-teal-500/10 hover:bg-teal-300/10 text-sm font-medium text-teal-400"
+        className="px-4 py-1.5 flex items-center justify-center gap-2 select-none rounded-full border border-teal-500/40 bg-teal-500/10 hover:bg-teal-300/10 text-xs md:text-sm font-medium text-teal-400"
       >
         <Sparkles className='size-3.5' /> Now in Early Access
       </motion.div>
@@ -33,7 +33,7 @@ function Hero() {
          animate="visible"
             transition={{ duration: 0.7, delay: 0.2 }}
             
-        className='text-6xl text-center font-bold leading-tight tracking-tight'>
+        className='text-4xl md:text-6xl text-center font-bold leading-tight tracking-tight'>
           Write smarter, faster, and better <br />
           <span>with <span className='bg-clip-text text-transparent bg-linear-to-r from-green-600 to-teal-400'> AI</span></span>
 
@@ -45,7 +45,7 @@ function Hero() {
         initial="hidden"
          animate="visible"
             transition={{ duration: 0.7, delay: 0.4 }}
-         className='max-w-2xl text-center mx-auto text-zinc-400 text-xl font-medium' >Generate high-quality blogs, captions, and emails in seconds. WriteWise helps you express ideas effortlessly with AI that understands your tone and intent.
+         className='max-w-2xl text-center mx-auto text-zinc-400 text-sml0 md:text-xl font-medium' >Generate high-quality blogs, captions, and emails in seconds. WriteWise helps you express ideas effortlessly with AI that understands your tone and intent.
          </motion.p>
 
         
@@ -57,7 +57,7 @@ function Hero() {
          animate="visible"
            transition={{ duration: 0.7, delay: 0.6 }}
         className='flex justify-center'>
-         <button className='relative cursor-pointer border border-neutral-700 px-3 py-2  text-neutral-100 rounded-2xl'>
+         <button className='relative cursor-pointer border border-neutral-700 px-3 py-2  text-neutral-100 rounded-2xl max-md:text-xs'>
           <div className='absolute -bottom-px inset-x-0 w-full h-px bg-linear-to-r from-transparent via-teal-600 to-transparent'></div>
           Join the Waitlist</button>
        </motion.div>

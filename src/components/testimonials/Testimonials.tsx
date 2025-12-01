@@ -62,7 +62,7 @@ const bottomRow = testimonials.slice(3, 6);
        transition={{ duration: 0.6, delay: 0.1 }}
        viewport={{once: true}}
        >
-        <h2 className="font-bold text-neutral-100 mb-12 text-5xl max-w-2xl text-center"> See how <span className="text-primary">TypeZen</span> helps creators shine</h2>
+        <h2 className="font-bold text-neutral-100 mb-12 text-3xl md:text-5xl max-w-2xl text-center"> See how <span className="text-primary">TypeZen</span> helps creators shine</h2>
        </motion.div>
 
 

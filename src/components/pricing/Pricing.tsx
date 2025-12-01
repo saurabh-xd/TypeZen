@@ -66,8 +66,8 @@ function Pricing() {
           viewport={{ once: true }}
     
     className='text-center mb-12'>
-<h2 className='text-neutral-50 font-bold text-6xl mb-4'>Pricing</h2>
-<p className='text-neutral-400  text-xl'> Get started with the plan that suits your needs</p>
+<h2 className='text-neutral-50 font-bold text-4xl md:text-6xl mb-4'>Pricing</h2>
+<p className='text-neutral-400  text-sm md:text-xl'> Get started with the plan that suits your needs</p>
 
     </motion.div>
 

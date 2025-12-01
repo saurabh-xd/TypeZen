@@ -10,12 +10,12 @@ import Footer from "@/components/footer/Footer";
 export default function Home() {
   return (
     <div className="bg-neutral-950">
-     <Navbar />
+    
      <Hero/>
      <Features/>
      <Testimonials/>
      <Pricing/>
-     <Footer/>
+   
    
      
    

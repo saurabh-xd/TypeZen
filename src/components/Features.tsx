@@ -24,7 +24,7 @@ export const features = [
     title: "Content Templates",
     description: "Access ready-to-use formats for blogs, emails, captions, and more.",
     icon: Sparkles,
-    span: "col-span-2"
+    span: "md:col-span-2"
   },
   {
     title: "Goal-Oriented Writing",
@@ -37,14 +37,14 @@ export const features = [
 function Features() {
   return (
    
-    <div id='features' className='max-w-7xl mx-auto min-h-screen text-neutral-100 flex flex-col items-center  justify-center py-12'>
+    <div id='features' className='max-w-7xl mx-auto min-h-screen text-neutral-100 flex flex-col items-center  justify-center py-12 '>
         <div className='text-center flex flex-col gap-4 mb-12'>
        <motion.h2
        initial={{opacity: 0, y: 20}}
        whileInView={{opacity: 1, y: 0}}
        transition={{ duration: 0.5,  }}
         viewport={{ once: true }}
-       className='font-bold text-4xl'>Write Smarter with AI     </motion.h2>
+       className='font-bold text-3xl md:text-4xl'>Write Smarter with AI     </motion.h2>
 
 
        <motion.p
@@ -52,10 +52,10 @@ function Features() {
        whileInView={{opacity: 1, y: 0}}
        transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-        className='max-w-2xl font-semibold text-neutral-400 text-lg'> TypeZen combines intelligence, creativity, and simplicity — giving you the tools to write faster and smarter than ever before.</motion.p>
+        className='max-w-2xl font-semibold text-neutral-400 text-md md:text-lg'> TypeZen combines intelligence, creativity, and simplicity — giving you the tools to write faster and smarter than ever before.</motion.p>
        </div>
 
-       <div className='grid grid-cols-3 gap-4'>
+       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:mx-0 mx-4'>
          {
             features.map((item,index)=>(
                 <motion.div
@@ -64,13 +64,13 @@ function Features() {
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1}}
       
-                 key={index} className={`border border-neutral-800  rounded-lg p-8 flex bg-neutral-900/50 hover:border-teal-500/50  hover:shadow-[0_0_30px_rgba(20,184,166,0.1)]  flex-col justify-center gap-4 ${item.span || ""}`}>
-                    <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-linear-to-br from-teal-500/10 to-green-500/10 border border-teal-600/20">
-  <item.icon className="text-teal-400 size-6" />
+                 key={index} className={`border border-neutral-800  rounded-lg p-4 md:p-8 flex bg-neutral-900/50 hover:border-teal-500/50  hover:shadow-[0_0_30px_rgba(20,184,166,0.1)]  flex-col justify-center gap-4 ${item.span || ""}`}>
+                    <div className="md:size-14 size-10 flex items-center justify-center rounded-xl bg-linear-to-br from-teal-500/10 to-green-500/10 border border-teal-600/20">
+  <item.icon className="text-teal-400 size-4 md:size-6" />
 </div>
-                    <h2 className='font-semibold text-xl'>{item.title}</h2>
+                    <h2 className='font-semibold text-lg md:text-xl'>{item.title}</h2>
                     
-                    <p className='text-neutral-400 font-semibold'>{item.description}</p>
+                    <p className='text-neutral-400 font-semibold max-md:text-sm'>{item.description}</p>
                    
                 </motion.div>
             ))

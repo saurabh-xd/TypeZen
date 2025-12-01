@@ -13,7 +13,7 @@ const Navbar = () => {
 
 ];
   return (
-    <div className='flex  items-center  justify-between pt-4  px-6'>
+    <div className='flex  items-center  justify-between bg-neutral-950 pt-4  px-6'>
 
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -22,7 +22,7 @@ const Navbar = () => {
       >
             <Link href="/" className='flex gap-2 items-center justify-center text-neutral-50'>
               <WifiPen className='text-primary' />
-               <h1 className='font-bold text-xl'>
+               <h1 className='font-bold text-sm md:text-xl'>
                 TypeZen</h1>
             </Link>
             </motion.div>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     <motion.div 
                      initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: key * 0.1 }}
+                transition={{ delay: key * 0.2 }}
               
                         
                     key={key}
@@ -52,7 +52,7 @@ const Navbar = () => {
                initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             
-              className='px-4 py-2 rounded-md bg-neutral-50 hover:bg-neutral-200 font-medium text-sm transition-colors'>Join Waitlist
+              className='px-4 py-2 rounded-md bg-neutral-50 hover:bg-neutral-200 font-medium text-xs md:text-sm transition-colors cursor-pointer'>Join Waitlist
               </motion.button>
             
     </div>

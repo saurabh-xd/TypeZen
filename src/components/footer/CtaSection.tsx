@@ -15,8 +15,8 @@ function CtaSection() {
       
 
        className='text-center mb-10'>
-   <h2 className='font-semibold text-6xl max-w-2xl mb-4'>Ready to write smarter with AI?</h2>
-   <p className='font-medium text-neutral-400'>Join thousands of creators using TypeZen to write faster, better, and effortlessly.</p>
+   <h2 className='font-semibold text-4xl md:text-6xl max-w-2xl mb-4'>Ready to write smarter with AI?</h2>
+   <p className='md:font-medium  text-neutral-400'>Join thousands of creators using TypeZen to write faster, better, and effortlessly.</p>
        </div>
 
       
