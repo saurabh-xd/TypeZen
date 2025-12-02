@@ -10,10 +10,10 @@ const heroVariants = {
 }
 function Hero() {
   return (
-    <div className='relative max-w-7xl mx-auto flex items-center justify-center flex-col min-h-screen gap-6'>
+    <div className='relative  flex items-center justify-center flex-col min-h-screen gap-6'>
 
       
-<div className='relative z-10 flex items-center justify-center flex-col gap-6'>
+<div className='relative z-10 flex items-center justify-center flex-col gap-6 max-w-7xl mx-auto px-4'>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ function Hero() {
         initial="hidden"
          animate="visible"
             transition={{ duration: 0.7, delay: 0.4 }}
-         className='max-w-2xl text-center mx-auto text-zinc-400 text-sml0 md:text-xl font-medium' >Generate high-quality blogs, captions, and emails in seconds. WriteWise helps you express ideas effortlessly with AI that understands your tone and intent.
+         className='max-w-2xl text-center mx-auto text-zinc-400 text-sm md:text-xl font-medium' >Generate high-quality blogs, captions, and emails in seconds. WriteWise helps you express ideas effortlessly with AI that understands your tone and intent.
          </motion.p>
 
         
