@@ -13,7 +13,7 @@ const Navbar = () => {
 
 ];
   return (
-    <div className='flex  items-center  justify-between bg-neutral-950 pt-4  px-6'>
+    <div className='flex  items-center  justify-between bg-neutral-950 py-4  px-6'>
 
       <motion.div
         initial={{ opacity: 0, x: -20 }}
